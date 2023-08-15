@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 import menu from '../../assets/menu.png'
+
 type NavBarProps = {
   smallScreen: boolean,
-  menuOpen: boolean,
   openOrCloseMenu: () => void 
 }
 
-const NavBar = ({smallScreen, menuOpen, openOrCloseMenu}: NavBarProps) => {
+const NavBar = ({smallScreen, openOrCloseMenu}: NavBarProps) => {
   return (
-    <nav className={menuOpen ? 'hidden' : ''}>
+    <nav>
       <Link className='logo' to='/'><img src={logo} alt='Kaite Sanger Logo with moon symbol'/></Link>
       {!smallScreen
         ? <div className='link-container'>
@@ -21,7 +21,9 @@ const NavBar = ({smallScreen, menuOpen, openOrCloseMenu}: NavBarProps) => {
         <NavLink className='nav-link' to='/blog'>Blog</NavLink>
       </div>
         :
-      <button className='menu-btn' onClick={openOrCloseMenu}><img src={menu} alt='menu button'/></button>}
+        <button style={{ marginBottom: "15px" }} className='menu-btn' onClick={openOrCloseMenu}>
+          <img src={menu} alt='menu button' />
+        </button>}
     </nav>
   )
 }

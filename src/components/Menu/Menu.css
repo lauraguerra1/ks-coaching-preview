@@ -1,0 +1,23 @@
+.menu {
+  flex-direction: column;
+}
+
+.menu .menu-btn {
+  align-self: flex-end;
+}
+
+.menu-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+  width: 100%;
+}
+
+.menu-link-container .nav-link{
+  width: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}

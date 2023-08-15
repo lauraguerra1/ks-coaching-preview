@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import NavBar from '../NavBar/NavBar'
+import Menu from '../Menu/Menu'
 import './App.css'
 
 const App = () => {
@@ -19,7 +20,10 @@ const App = () => {
 
   return (
     <div className="app">
-      {<NavBar smallScreen={smallScreen} menuOpen={menuOpen} openOrCloseMenu={openOrCloseMenu}/>}
+      {menuOpen
+        ? <Menu openOrCloseMenu={openOrCloseMenu} />
+        : <NavBar smallScreen={smallScreen} openOrCloseMenu={openOrCloseMenu}/>
+      }
       <main>
 
       </main>

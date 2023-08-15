@@ -25,3 +25,9 @@ nav {
 .menu-btn img {
   max-width: 40px
 }
+
+@media screen and (max-width: 400px) {
+  .logo img {
+    max-width: 95%;
+  }
+}
