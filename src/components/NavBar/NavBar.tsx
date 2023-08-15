@@ -4,21 +4,24 @@ import { Link } from 'react-router-dom'
 import './NavBar.css'
 import menu from '../../assets/menu.png'
 type NavBarProps = {
+  smallScreen: boolean,
   menuOpen: boolean,
   openOrCloseMenu: () => void 
 }
 
-const NavBar = ({menuOpen, openOrCloseMenu}: NavBarProps) => {
+const NavBar = ({smallScreen, menuOpen, openOrCloseMenu}: NavBarProps) => {
   return (
-    <nav>
+    <nav className={menuOpen ? 'hidden' : ''}>
       <Link className='logo' to='/'><img src={logo} alt='Kaite Sanger Logo with moon symbol'/></Link>
-      <div className={menuOpen ? 'hidden' : 'link-container'}>
+      {!smallScreen
+        ? <div className='link-container'>
         <NavLink className='nav-link' to='/'>Home</NavLink>
         <NavLink className='nav-link' to='/about'>About</NavLink>
         <NavLink className='nav-link' to='/services'>Services</NavLink>
         <NavLink className='nav-link' to='/blog'>Blog</NavLink>
       </div>
-      <button className={menuOpen ? 'hidden' : 'menu-btn'}><img src={menu} alt='menu button'/></button>
+        :
+      <button className='menu-btn' onClick={openOrCloseMenu}><img src={menu} alt='menu button'/></button>}
     </nav>
   )
 }

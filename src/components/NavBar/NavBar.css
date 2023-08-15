@@ -16,3 +16,12 @@ nav {
   font-size: 20px;
   margin: 10px;
 }
+
+.menu-btn {
+  background-color: #00000000;
+  border: none;
+}
+
+.menu-btn img {
+  max-width: 40px
+}
