@@ -1,0 +1,18 @@
+nav {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-container {
+  margin: 20px;
+}
+
+.logo img {
+  max-width: 350px;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin: 10px;
+}
