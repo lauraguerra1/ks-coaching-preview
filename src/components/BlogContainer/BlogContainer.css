@@ -1,0 +1,13 @@
+/* .blog-landing {
+  min-height: 80vh;
+  min-width: 100vw;
+  background: url('../../assets/ks-portrait.jpeg') cover;
+  background-color: #fffdfd72;
+  background-repeat: no-repeat;
+} */
+
+.blog-landing-img {
+  opacity: 50%;
+  width: 100vw;
+  position: relative;
+}

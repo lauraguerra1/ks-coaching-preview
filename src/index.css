@@ -2,6 +2,10 @@
   font-family: 'Playfair Display SC', serif;
 }
 
+p {
+  font-family: 'Playfair Display', serif;
+}
+
 a {
   color: black;
   text-decoration: none;
