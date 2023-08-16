@@ -1,13 +1,52 @@
-/* .blog-landing {
-  min-height: 80vh;
-  min-width: 100vw;
-  background: url('../../assets/ks-portrait.jpeg') cover;
-  background-color: #fffdfd72;
-  background-repeat: no-repeat;
-} */
+.blog-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .blog-landing-img {
   opacity: 50%;
   width: 100vw;
-  position: relative;
 }
+
+.article-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 95%;
+}
+
+.blog-landing article {
+  border-radius: 29px;
+  background: rgba(255, 251, 251, 0.33);
+  backdrop-filter: blur(5px);
+  width: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#featuredBlog {
+  align-self: flex-end;
+}
+
+.blog-landing article h1, .blog-landing article h2 {
+  font-size: 35px;
+  margin: 3px 0px;
+}
+.blog-landing article p{
+  font-size: 20px;
+  margin: 0;
+}
+
+.view-post-btn {
+  font-size: 18px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: rgba(167, 174, 126, 0.62);
+  border: none;
+}
+
