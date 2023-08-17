@@ -4,9 +4,9 @@ import BlogPost from './BlogPost/BlogPost'
 import { blogs } from '../../data';
 
 const BlogContainer = () => {
-  const blogEls = blogs.map((blog, i) => {
-    if (i !== blogs.length - 1) {
-      return <BlogPost blog={blog} />
+  const blogEls = blogs.reverse().map((blog, i) => {
+    if (i) {
+      return <BlogPost blog={blog} isLast={i === blogs.length - 1 ? true : false} />
     }
   })
   return (
@@ -20,9 +20,9 @@ const BlogContainer = () => {
           </article>
           <article id='featuredBlog'>
             <p>Read Our Latest:</p>
-            <h2>{blogs[blogs.length - 1].title}</h2>
-            <p>{blogs[blogs.length - 1].tagline}.</p>
-            <a href={blogs[blogs.length - 1].link} target="_blank" className='view-post-btn'>view the post</a>
+            <h2>{blogs[0].title}</h2>
+            <p>{blogs[0].tagline}.</p>
+            <a href={blogs[0].link} target="_blank" className='view-post-btn'>view the post</a>
           </article>
         </div>
       </section>

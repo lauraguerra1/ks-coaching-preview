@@ -55,3 +55,11 @@
   padding: 5px 10px;
 }
 
+.blog-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,24 +1,35 @@
-.blog {
+.blog, .last-blog {
   border-bottom: 1px solid black; 
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  padding-right: 0; 
 }
 
-.blog p {
+.last-blog {
+  border-bottom: none;
+}
+
+.blog-p {
   font-size: 20px;
+  max-width: 400px;
+  margin: 5px
 }
 
-.blog h3 {
+.blog-title {
   font-size: 25px;
+  margin: 5px;
 }
 
-.blog article{
+.blog-article{
   display: flex; 
   flex-direction: column;
 }
 
-.blog img {
+.blog-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
