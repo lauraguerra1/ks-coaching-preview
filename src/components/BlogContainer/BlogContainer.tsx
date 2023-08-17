@@ -2,6 +2,7 @@ import './BlogContainer.css'
 import KSPortrait from '../../assets/ks-portrait.jpeg'
 import BlogPost from './BlogPost/BlogPost'
 import { blogs } from '../../data';
+import expandMore from '../../assets/expand-more.png'
 
 const BlogContainer = () => {
   const blogEls = blogs.reverse().map((blog, i) => {
@@ -25,6 +26,7 @@ const BlogContainer = () => {
             <a href={blogs[0].link} target="_blank" className='view-post-btn'>view the post</a>
           </article>
         </div>
+        <button className='scroll-btn'onClick={() => document.querySelector('.blog-list')?.scrollIntoView({ behavior: 'smooth' })}><img src={expandMore}  /></button>
       </section>
       <section className='blog-list'>
         {blogEls}
