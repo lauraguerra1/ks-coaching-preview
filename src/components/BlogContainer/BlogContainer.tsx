@@ -33,10 +33,10 @@ const BlogContainer = ({smallScreen}: {smallScreen: boolean}) => {
         <button className='scroll-btn'onClick={() => document.querySelector('.blog-list')?.scrollIntoView({ behavior: 'smooth' })}><img src={expandMore}  /></button>
       </section>
       <section className='blog-list'>
-        {/* <header className='blog-heading'>
+        <header className='blog-heading2'>
           <h1>BLOG</h1>
           <p>Browse creative, meaningful & insightful musings on motherhood, well being, addiction + recovery, mental health, spirituality, psychology and astrology</p>
-        </header> */}
+        </header>
         {smallScreen && <BlogPost blog={blogs[0]} isLast={false} />}
         {blogEls}
       </section>

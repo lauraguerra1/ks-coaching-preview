@@ -77,7 +77,7 @@
   animation: fadeInFull 1s ease-in;
 }
 
-.blog-heading {
+.blog-heading, .blog-heading2 {
   display: none;
 }
 
@@ -92,5 +92,25 @@
     display: block;
     align-self: flex-end;
     padding: 20px;
+    animation: fadeInFull 1s ease-in;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .blog-heading {
+    display: none;
+  }
+  .blog-heading2 {
+    display: block;
+    width: 90%;
+    text-align: center;
+    display: block;
+    align-self: flex-end;
+    padding: 20px;
+    animation: fadeInFull 1s ease-in;
+  }
+
+  .scroll-btn {
+    display: none;
   }
 }

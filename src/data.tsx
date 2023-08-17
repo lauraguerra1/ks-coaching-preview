@@ -1,8 +1,9 @@
 import { Blog } from "./types"
-import portrait from './assets/ks-portrait.jpeg'
+import ksflowers from './assets/ks-flowers.jpg'
 import bodhi from './assets/bodhi.png'
 import laughing from './assets/ks-laughing.jpeg'
 import light from './assets/light.jpg'
+
 
 export const blogs: Blog[] = [
   {
@@ -10,7 +11,7 @@ export const blogs: Blog[] = [
     tag: 'Lifestyle',
     tagline: 'the power of doing nothing in times of uncertainty',
     link: 'https://katiesanger.substack.com/p/do-nothing',
-    coverImg: portrait
+    coverImg: ksflowers
   },
   {
     title: 'Lots of feelings + gratitude',
