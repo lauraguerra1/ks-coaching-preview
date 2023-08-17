@@ -29,7 +29,7 @@ const App = () => {
       <main>
         {!menuOpen &&
         <Routes>
-          <Route path='/blog' element={<BlogContainer />} />
+            <Route path='/blog' element={<BlogContainer smallScreen={smallScreen} />} />
         </Routes>}
       </main>
     </div>
