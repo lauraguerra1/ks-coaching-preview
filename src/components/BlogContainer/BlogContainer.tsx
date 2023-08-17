@@ -1,7 +1,10 @@
 import './BlogContainer.css'
 import KSPortrait from '../../assets/ks-portrait.jpeg'
+import Blog from './Blog/Blog'
+import { blogs } from '../../data';
 
 const BlogContainer = () => {
+  const blogEls = blogs.reverse().map((blog, i) => <Blog blog={blog} isLast={i === blogs.length - 1 ? true : false} />)
   return (
     <>
       <section className='blog-landing'>
@@ -13,12 +16,13 @@ const BlogContainer = () => {
           </article>
           <article id='featuredBlog'>
             <p>Read Our Latest:</p>
-            <h2>Do Nothing.</h2>
-            <p>The power of doing nothing in times of uncertainty.</p>
-            <button className='view-post-btn'>view the post</button>
+            <h2>{blogs[blogs.length - 1].title}</h2>
+            <p>{blogs[blogs.length - 1].tagline}.</p>
+            <a href={blogs[blogs.length - 1].link} target="_blank" className='view-post-btn'>view the post</a>
           </article>
         </div>
       </section>
+      {blogEls}
     </>
   )
 }

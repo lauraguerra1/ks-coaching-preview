@@ -48,5 +48,10 @@
   border-radius: 10px;
   background: rgba(167, 174, 126, 0.62);
   border: none;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
