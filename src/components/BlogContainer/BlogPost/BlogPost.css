@@ -1,0 +1,25 @@
+.blog {
+  border-bottom: 1px solid black; 
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog p {
+  font-size: 20px;
+}
+
+.blog h3 {
+  font-size: 25px;
+}
+
+.blog article{
+  display: flex; 
+  flex-direction: column;
+}
+
+.blog img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}

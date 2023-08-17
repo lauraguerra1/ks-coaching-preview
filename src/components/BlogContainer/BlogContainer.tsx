@@ -1,10 +1,14 @@
 import './BlogContainer.css'
 import KSPortrait from '../../assets/ks-portrait.jpeg'
-import Blog from './Blog/Blog'
+import BlogPost from './BlogPost/BlogPost'
 import { blogs } from '../../data';
 
 const BlogContainer = () => {
-  const blogEls = blogs.reverse().map((blog, i) => <Blog blog={blog} isLast={i === blogs.length - 1 ? true : false} />)
+  const blogEls = blogs.map((blog, i) => {
+    if (i !== blogs.length - 1) {
+      return <BlogPost blog={blog} />
+    }
+  })
   return (
     <>
       <section className='blog-landing'>
@@ -22,7 +26,9 @@ const BlogContainer = () => {
           </article>
         </div>
       </section>
-      {blogEls}
+      <section className='blog-list'>
+        {blogEls}
+      </section>
     </>
   )
 }
