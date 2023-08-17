@@ -27,9 +27,10 @@ const App = () => {
         : <NavBar smallScreen={smallScreen} openOrCloseMenu={openOrCloseMenu}/>
       }
       <main>
+        {!menuOpen &&
         <Routes>
           <Route path='/blog' element={<BlogContainer />} />
-        </Routes>
+        </Routes>}
       </main>
     </div>
   )

@@ -27,3 +27,52 @@ body {
 .hidden {
   display: none;
 }
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translate(0)
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translate(0)
+  }
+}
+
+@keyframes fadeInHalf {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 12%
+  }
+  50% {
+    opacity: 25%;
+  }
+  75% {
+    opacity: 37%
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
+@keyframes fadeInFull {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

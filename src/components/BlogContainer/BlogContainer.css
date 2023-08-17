@@ -9,6 +9,7 @@
 .blog-landing-img {
   opacity: 50%;
   width: 100vw;
+  animation: fadeInHalf 1s ease-in;
 }
 
 .article-container {
@@ -28,18 +29,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: slideIn 0.7s ease-in;
+  animation: fadeInFull 1s ease-in;
 }
 
 #featuredBlog {
   align-self: flex-end;
-  animation: slideInRight 0.7s ease-in;
 }
 
 .blog-landing article h1, .blog-landing article h2 {
   font-size: 35px;
   margin: 3px 0px;
 }
+
 .blog-landing article p{
   font-size: 20px;
   margin: 0;
@@ -56,6 +57,7 @@
   justify-content: center;
   cursor: pointer;
   padding: 5px 10px;
+  text-align: center;
 }
 
 .blog-list {
@@ -72,23 +74,5 @@
   border: none; 
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+  animation: fadeInFull 1s ease-in;
 }
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-400px);
-  }
-  100% {
-    transform: translate(0)
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(400px);
-  }
-  100% {
-    transform: translate(0)
-  }
-}
-

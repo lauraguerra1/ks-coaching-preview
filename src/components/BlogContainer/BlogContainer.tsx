@@ -22,7 +22,7 @@ const BlogContainer = () => {
           <article id='featuredBlog'>
             <p>Read Our Latest:</p>
             <h2>{blogs[0].title}</h2>
-            <p>{blogs[0].tagline}.</p>
+            <p>{blogs[0].tagline}</p>
             <a href={blogs[0].link} target="_blank" className='view-post-btn'>view the post</a>
           </article>
         </div>
