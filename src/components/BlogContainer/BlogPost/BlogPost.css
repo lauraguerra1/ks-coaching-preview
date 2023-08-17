@@ -36,6 +36,7 @@
 }
 
 .blog-img {
+  min-width: 200px;
   width: 200px;
   height: 200px;
   object-fit: cover;

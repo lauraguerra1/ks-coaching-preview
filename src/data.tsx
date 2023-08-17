@@ -6,11 +6,18 @@ import light from './assets/light.jpg'
 
 export const blogs: Blog[] = [
   {
-    title: 'Breaking Open',
-    tag: 'Growth',
-    tagline: 'the start of something new',
-    link: 'https://katiesanger.substack.com/p/breaking-open',
-    coverImg: light
+    title: 'Do Nothing.',
+    tag: 'Lifestyle',
+    tagline: 'the power of doing nothing in times of uncertainty',
+    link: 'https://katiesanger.substack.com/p/do-nothing',
+    coverImg: portrait
+  },
+  {
+    title: 'Lots of feelings + gratitude',
+    tag: 'Gratitude', 
+    tagline: 'let\'s start the week off right. sharing some insights i\'ve gained this past year.',
+    link: 'https://katiesanger.substack.com/p/lots-of-feelings-gratitude',
+    coverImg: bodhi
   },
   {
     title: 'We\'re Human',
@@ -20,19 +27,12 @@ export const blogs: Blog[] = [
     coverImg: laughing
   }, 
   {
-    title: 'Lots of feelings + gratitude',
-    tag: 'Gratitude', 
-    tagline: 'let\'s start the week off right. sharing some insights i\'ve gained this past year.',
-    link: 'https://katiesanger.substack.com/p/lots-of-feelings-gratitude',
-    coverImg: bodhi
+    title: 'Breaking Open',
+    tag: 'Growth',
+    tagline: 'the start of something new',
+    link: 'https://katiesanger.substack.com/p/breaking-open',
+    coverImg: light
   },
-  {
-    title: 'Do Nothing.',
-    tag: 'Lifestyle',
-    tagline: 'the power of doing nothing in times of uncertainty',
-    link: 'https://katiesanger.substack.com/p/do-nothing',
-    coverImg: portrait
-  }
 ]
 // export const blogs: Blog[] = [
 //   {

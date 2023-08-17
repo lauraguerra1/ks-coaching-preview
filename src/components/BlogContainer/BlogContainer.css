@@ -76,3 +76,21 @@
   cursor: pointer;
   animation: fadeInFull 1s ease-in;
 }
+
+.blog-heading {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  #articleHeading {
+    display: none;
+  }
+
+  .blog-heading {
+    width: 90%;
+    text-align: center;
+    display: block;
+    align-self: flex-end;
+    padding: 20px;
+  }
+}
