@@ -2,33 +2,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  margin: 20px;
+  height: 575px;
+  width: 335px; 
+  position: relative;
 }
 
+/* .service-image-container {
+  position: absolute;
+} */
+
 .service-card-image {
-  max-height: 500px;
+  height: 500px;
   width: 335px; 
   object-fit: cover;
   position: absolute;
 }
 
-.service-card-overlay {
-  visibility: hidden;
-}
 
-.service-card-overlay:hover {
-  visibility: visible ;
+.service-card-overlay{
   height: 500px;
   width: 335px; 
   background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(2px);
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  opacity: 0;
+}
+
+.service-card-button {
+  background-color: #D9C19F;
+  font-family: 'Junge', serif;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 3px;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.service-card-overlay:hover {
+  opacity: 1;
 }
 
 .service-card-title {
   z-index: 2;
   position: absolute;
-}
+  bottom: 0;
+  width: 80%;
+  text-align: center;
+  background-color: #E3D5C1;
+  padding: 10px;
+  font-family: 'Junge', serif;
+  font-weight: 400;
+  font-size: 25px;
+} 
+
+
+
