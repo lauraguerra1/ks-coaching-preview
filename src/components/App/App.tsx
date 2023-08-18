@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import NavBar from '../NavBar/NavBar'
 import Menu from '../Menu/Menu'
-import { Routes, Route } from 'react-router-dom'
 import BlogContainer from '../BlogContainer/BlogContainer'
+import ServicesPage from '../ServicesPage/ServicesPage'
 import './App.css'
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         {!menuOpen &&
         <Routes>
             <Route path='/blog' element={<BlogContainer smallScreen={smallScreen} />} />
+            <Route path='/services' element={<ServicesPage />} />
         </Routes>}
       </main>
     </div>

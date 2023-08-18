@@ -1,0 +1,34 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.service-card-image {
+  max-height: 500px;
+  width: 335px; 
+  object-fit: cover;
+  position: absolute;
+}
+
+.service-card-overlay {
+  visibility: hidden;
+}
+
+.service-card-overlay:hover {
+  visibility: visible ;
+  height: 500px;
+  width: 335px; 
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(2px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-title {
+  z-index: 2;
+  position: absolute;
+}
