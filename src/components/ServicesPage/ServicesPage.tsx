@@ -10,13 +10,13 @@ const ServicesPage = () => {
   return (
     <section className='service-page'>
       <header>
-        <h1 style={{fontSize: '40px'}}>Services</h1>
+        <h1 style={{fontSize: '35px'}}>Services</h1>
       </header>
       <section className='service-cards-container'>
         {serviceCards}
       </section>
-      <img src={moonPhase} alt="phases of the moon" />
-      <section>
+      <img style={{ maxWidth: '50%' }} src={moonPhase} alt="phases of the moon" />
+      <section className='service-details-container'>
           {serviceDetails}
       </section>
     </section>

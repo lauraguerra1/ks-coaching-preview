@@ -6,7 +6,7 @@ const ServiceCard = ({ service, number}: { service: Service, number: number }) =
     document.querySelector(`#service${serviceNumber}`)?.scrollIntoView({ behavior: 'smooth' })
   }
   return (
-    <section className='service-card'>
+    <section className='service-card' id={`serviceCard${number}`}>
         <img className='service-card-image' src={service.image.src} alt={service.image.alt} />
       <div className='service-card-overlay' onClick={() => scrollToService(number)}>
         <button className='service-card-button' >Learn More</button>

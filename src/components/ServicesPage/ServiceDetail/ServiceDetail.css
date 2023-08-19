@@ -1,0 +1,14 @@
+.service-detail {
+  width: 100%;
+  position: relative;
+}
+
+.service-detail-article, .service-detail-image-container {
+  height: 800px;
+  position: absolute;
+}
+
+.service-detail-image {
+  height: 600px;
+}
+

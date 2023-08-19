@@ -4,7 +4,7 @@ const ServiceDetail = ({ service, number }: { service: Service, number: number }
   return (
     <section className='service-detail' id={`service${number}`}>
       <div className='service-detail-image-container'>
-        <img src={service.image.src} alt={service.image.alt} />
+        <img className='service-detail-image' src={service.image.src} alt={service.image.alt} />
         <button className='book-service-button'>BOOK NOW</button>
       </div>
       <article className='service-detail-article'>
