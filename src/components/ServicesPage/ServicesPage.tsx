@@ -1,19 +1,21 @@
 import './ServicesPage.css'
 import { services } from '../../data'
 import ServiceCard from './ServiceCard/ServiceCard'
+import ServiceDetail from './ServiceDetail/ServiceDetail'
 
 const ServicesPage = () => {
-  const serviceEls = services.map((service, i) => <ServiceCard key={service.title} service={service} number={i+1} />)
+  const serviceCards = services.map((service, i) => <ServiceCard key={service.title} service={service} number={i} />)
+  const serviceDetails = services.map((service, i) => <ServiceDetail key={service.title} service={service} number={i} />)
   return (
     <section className='service-page'>
       <header>
         <h1 style={{fontSize: '40px'}}>Services</h1>
       </header>
       <section className='service-cards-container'>
-        {serviceEls}
+        {serviceCards}
       </section>
       <section>
-          <p className='service1'>service 1</p>
+          {serviceDetails}
       </section>
     </section>
   )

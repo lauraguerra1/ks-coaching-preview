@@ -8,10 +8,6 @@
   position: relative;
 }
 
-/* .service-image-container {
-  position: absolute;
-} */
-
 .service-card-image {
   height: 500px;
   width: 335px; 
@@ -63,3 +59,24 @@
 
 
 
+@media screen and (min-width: 1900px) {
+  .service-card, .service-card-image, .service-card-overlay {
+    width: 450px;
+    height: 700px;
+  }
+
+  .service-card-image, .service-card-overlay {
+    height: 650px;
+  }
+}
+
+@media screen and (min-width: 2500px){
+  .service-card, .service-card-image, .service-card-overlay {
+    width: 550px;
+    height: 775px;
+  }
+
+  .service-card-image, .service-card-overlay {
+    height: 725px;
+  }
+}
