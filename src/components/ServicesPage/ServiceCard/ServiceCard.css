@@ -4,7 +4,7 @@
   align-items: center;
   margin: 20px;
   height: 70vh;
-  width: 70vw; 
+  width: 90vw; 
   position: relative;
   animation: fadeInFull 0.75s ease-in;
 }
@@ -19,14 +19,14 @@
 
 .service-card-image {
   height: 65vh;
-  width: 70vw; 
+  width: 90vw; 
   object-fit: cover;
   position: absolute;
 }
 
 .service-card-overlay{
   height: 65vh;
-  width: 70vw; 
+  width: 90vw; 
   background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(2px);
   position: absolute;
@@ -66,7 +66,13 @@
 } 
 
 
- @media screen and (min-width: 900px){
+@media screen and (min-width: 475px) {
+  .service-card, .service-card-image, .service-card-overlay {
+    width: 75vw; 
+  }
+}
+
+@media screen and (min-width: 900px){
   .service-card, .service-card-image, .service-card-overlay {
     height: 500px;
     width: 335px; 

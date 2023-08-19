@@ -11,15 +11,20 @@ type ServiceDetailProps = {
 
 const ServiceDetail = ({ service, number, serviceIsSelected, deselectService }: ServiceDetailProps) => {
   return (
-    <section style={{width: '100%'}}>
-      {serviceIsSelected && <button className='service-back-btn' onClick={deselectService}><img src={back} alt='back button'/></button>}
+    <section style={{width: '100%'}} className='small-screen-sevice-container'>
+      {serviceIsSelected &&
+        <div className='selected-service-top'>
+          <button className='service-back-btn' onClick={deselectService}><img src={back} alt='back button' /></button>
+          <h2 className='service-detail-title'>{service.title}</h2>
+        </div>
+      }
       <section className='service-detail' id={`service${number}`}>
         <div className='service-detail-image-container'>
           <img className='service-detail-image' src={service.image.src} alt={service.image.alt} />
           <button className='book-service-button'>BOOK NOW</button>
         </div>
         <article className='service-detail-article'>
-          <h2 className='service-detail-title'>{service.title}</h2>
+          {!serviceIsSelected && <h2 className='service-detail-title'>{service.title}</h2>}
           <div className='service-detail-description'>
             <p>{service.description}</p>
           </div>

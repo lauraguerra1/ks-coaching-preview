@@ -81,7 +81,8 @@
 @media screen and (max-width: 900px) {
   .service-detail {
     width: 100vw;
-    height: 90vh;
+    max-height: 85vh;
+    margin: 10px 0px;
   }
  .service-detail-image-container{
     width: 90%;
@@ -99,4 +100,46 @@
     height: 50%;
     z-index: 2;
  }
+
+ .service-detail-title {
+  margin: 0px;
+  padding: 0;
+ }
+
+ .small-screen-service-container {
+    max-height: 80vh;
+ }
+
+ .service-detail-description {
+    bottom: 0;
+    position: absolute;
+    overflow-y: auto;
+    display: block;
+    margin: auto;
+    background-color: #00000000;
+    text-align: center;
+    margin-bottom: 5%;
+ }
+
+ .service-detail-description p{
+    margin: 0;
+ }
+}
+
+@media screen and (max-width: 395px) {
+  /* .service-detail-image {
+    height: 60%;
+ } */
+ /* .service-detail-article {
+  height: 50%;
+  bottom: 20%;
+ }
+*/
+ .service-detail-image-container {
+    max-height: 75vh;
+ }
+ 
+ .book-service-button {
+    bottom: 3%;
+ } 
 }

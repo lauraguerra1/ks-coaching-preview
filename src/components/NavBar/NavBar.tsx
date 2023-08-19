@@ -21,7 +21,7 @@ const NavBar = ({smallScreen, openOrCloseMenu}: NavBarProps) => {
         <NavLink className='nav-link' to='/blog'>Blog</NavLink>
       </div>
         :
-        <button style={{ marginBottom: "15px" }} className='menu-btn' onClick={openOrCloseMenu}>
+        <button className='menu-btn' onClick={openOrCloseMenu}>
           <img src={menu} alt='menu button' />
         </button>}
     </nav>
