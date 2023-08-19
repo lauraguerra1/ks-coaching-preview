@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  height: 500px;
-  width: 335px; 
+  height: 70vh;
+  width: 70vw; 
   position: relative;
   animation: fadeInFull 0.75s ease-in;
 }
@@ -18,16 +18,16 @@
 }
 
 .service-card-image {
-  height: 450px;
-  width: 335px; 
+  height: 65vh;
+  width: 70vw; 
   object-fit: cover;
   position: absolute;
 }
 
 
 .service-card-overlay{
-  height: 500px;
-  width: 335px; 
+  height: 65vh;
+  width: 70vw; 
   background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(2px);
   position: absolute;
@@ -67,6 +67,16 @@
 } 
 
 
+ @media screen and (min-width: 900px){
+  .service-card, .service-card-image, .service-card-overlay {
+    height: 500px;
+    width: 335px; 
+  }
+
+  .service-card-image, .service-card-overlay {
+    height: 450px;
+  }
+} 
 
 @media screen and (min-width: 1900px) {
   .service-card, .service-card-image, .service-card-overlay {
@@ -88,13 +98,4 @@
   .service-card-image, .service-card-overlay {
     height: 725px;
   }
-}
-
-@keyframes hiddenFade {
-  0% {
-    opacity: 0%
-  }
-  100%{
-    opacity: 0%;
-  }
-}
+} 

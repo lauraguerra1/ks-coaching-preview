@@ -20,9 +20,9 @@
   align-items: center;
 }
 
-/* @media screen and (max-width: 1125px){
+@media screen and (max-width: 900px){
   .service-cards-container {
     flex-direction: column;
     align-items: center;
   }
-} */
+}
