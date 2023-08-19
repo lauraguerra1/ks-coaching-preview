@@ -24,7 +24,6 @@
   position: absolute;
 }
 
-
 .service-card-overlay{
   height: 65vh;
   width: 70vw; 
@@ -38,7 +37,7 @@
   opacity: 0;
 }
 
-.service-card-button {
+.service-card-button, .book-service-button {
   background-color: #D9C19F;
   font-family: 'Junge', serif;
   padding: 10px;

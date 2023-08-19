@@ -1,14 +1,41 @@
 .service-detail {
-  width: 100%;
+  width: 75vw;
+  display: flex;
+  margin: 40px auto;
   position: relative;
 }
 
 .service-detail-article, .service-detail-image-container {
-  height: 800px;
+  width: 40vw;
+  height: 80vh;
+}
+
+.service-detail-article {
   position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 95%;
+  background-color: #E3D5C1;
+}
+
+.service-detail-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
 
 .service-detail-image {
-  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  height: 95%;
+  position: absolute;
 }
 
+.book-service-button {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0;
+}
