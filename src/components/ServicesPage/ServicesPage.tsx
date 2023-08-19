@@ -3,7 +3,7 @@ import { services } from '../../data'
 import ServiceCard from './ServiceCard/ServiceCard'
 import ServiceDetail from './ServiceDetail/ServiceDetail'
 import moonPhase from '../../assets/moonphase.png'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Service } from '../../types'
 
 const ServicesPage = ({ smallScreen }: { smallScreen: boolean }) => {
@@ -12,10 +12,18 @@ const ServicesPage = ({ smallScreen }: { smallScreen: boolean }) => {
   const serviceCards = services.map((service, i) => <ServiceCard key={service.title} service={service} number={i} smallScreen={smallScreen} selectService={selectService}/>)
   const serviceDetails = services.map((service, i) => <ServiceDetail key={service.title} service={service} number={i} />)
   
+  useEffect(() => { 
+    if (!smallScreen && selectedService) {
+      const serviceIndex = services.indexOf(selectedService)
+      setSelectedService(null)
+      document.querySelector(`#service${serviceIndex}`)?.scrollIntoView()
+    }
+  }, [smallScreen])
+  
   return (
     <section className='service-page'>
       {selectedService
-        ? <ServiceDetail service={selectedService} serviceIsSelected={true} deselectService={() => selectService(null)} />
+        ? <ServiceDetail service={selectedService} serviceIsSelected={selectedService ? true : false} deselectService={() => selectService(null)} />
         : 
         <>
           <header>
