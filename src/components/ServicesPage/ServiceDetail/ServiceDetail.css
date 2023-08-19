@@ -18,6 +18,26 @@
   background-color: #E3D5C1;
 }
 
+.service-detail-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.service-detail-description, .service-detail-title {
+  padding: 20px;
+}
+
+.service-detail-description {
+  background: rgba(250, 248, 247, 0.83);
+  margin: 10px;
+  height: 50%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .service-detail-image-container {
   display: flex;
   flex-direction: column;
@@ -38,4 +58,18 @@
   position: absolute;
   bottom: 0;
   border-radius: 0;
+}
+
+@media screen and (max-width: 945px) {
+  .service-detail-description {
+    height: 55%;
+  }
+
+  .service-detail-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+
 }

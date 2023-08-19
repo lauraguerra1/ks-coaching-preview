@@ -9,9 +9,9 @@ const ServiceDetail = ({ service, number }: { service: Service, number: number }
       </div>
       <article className='service-detail-article'>
         <h2 className='service-detail-title'>{service.title}</h2>
-        <p className='service-detail-description'>
-          {service.description}
-        </p>
+        <div className='service-detail-description'>
+          <p>{service.description}</p>
+        </div>
       </article>
     </section>
   )
