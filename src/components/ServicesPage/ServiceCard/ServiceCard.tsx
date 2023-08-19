@@ -3,8 +3,7 @@ import { Service } from '../../../types'
 
 const ServiceCard = ({ service, number}: { service: Service, number: number }) => {
   const scrollToService = (serviceNumber: number) => {
-    document.querySelector(`.service${serviceNumber}`)?.scrollIntoView()
-    console.log(document.querySelector(`.service${serviceNumber}`))
+    document.querySelector(`#service${serviceNumber}`)?.scrollIntoView({ behavior: 'smooth' })
   }
   return (
     <section className='service-card'>

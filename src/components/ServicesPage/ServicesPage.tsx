@@ -2,6 +2,7 @@ import './ServicesPage.css'
 import { services } from '../../data'
 import ServiceCard from './ServiceCard/ServiceCard'
 import ServiceDetail from './ServiceDetail/ServiceDetail'
+import moonPhase from '../../assets/moonphase.png'
 
 const ServicesPage = () => {
   const serviceCards = services.map((service, i) => <ServiceCard key={service.title} service={service} number={i} />)
@@ -14,6 +15,7 @@ const ServicesPage = () => {
       <section className='service-cards-container'>
         {serviceCards}
       </section>
+      <img src={moonPhase} alt="phases of the moon" />
       <section>
           {serviceDetails}
       </section>

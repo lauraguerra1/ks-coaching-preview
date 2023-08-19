@@ -2,7 +2,7 @@ import './ServiceDetail.css'
 import { Service } from '../../../types'
 const ServiceDetail = ({ service, number }: { service: Service, number: number }) => {
   return (
-    <section className={`service-detail service${number}`}>
+    <section className='service-detail' id={`service${number}`}>
       <div className='service-detail-image-container'>
         <img src={service.image.src} alt={service.image.alt} />
         <button className='book-service-button'>BOOK NOW</button>
