@@ -31,7 +31,7 @@ const App = () => {
         {!menuOpen &&
         <Routes>
             <Route path='/blog' element={<BlogContainer smallScreen={smallScreen} />} />
-            <Route path='/services' element={<ServicesPage />} />
+            <Route path='/services' element={<ServicesPage smallScreen={smallScreen} />} />
         </Routes>}
       </main>
     </div>

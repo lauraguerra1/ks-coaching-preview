@@ -3,6 +3,14 @@
   display: flex;
   margin: 40px auto;
   position: relative;
+  animation: fadeInFull 1s ease-in;
+}
+
+.service-back-btn {
+  background-color: #00000000;
+  border: none;
+  animation: fadeInFull 1s ease-in;
+  cursor: pointer;
 }
 
 .service-detail-article, .service-detail-image-container {
@@ -70,6 +78,6 @@
   }
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 900px) {
 
 }
