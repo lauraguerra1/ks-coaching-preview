@@ -4,6 +4,17 @@
   margin: 40px auto;
   position: relative;
   animation: fadeInFull 1s ease-in;
+  opacity: 0;
+  /* transform: translateY(1vh); */
+  visibility: hidden;
+  transition: opacity 1s ease-out;
+  will-change: opacity, visibility;
+}
+
+.service-detail.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 .service-back-btn {
@@ -87,6 +98,7 @@
  .service-detail-image-container{
     width: 90%;
     left: 5%;
+    max-height: 75vh;
  }
  .service-detail-article {
   width: 100%;
@@ -104,10 +116,6 @@
  .service-detail-title {
   margin: 0px;
   padding: 0;
- }
-
- .small-screen-service-container {
-    max-height: 80vh;
  }
 
  .service-detail-description {
