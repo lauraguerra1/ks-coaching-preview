@@ -7,7 +7,7 @@ import expandMore from '../../assets/expand-more.png'
 const BlogContainer = ({smallScreen}: {smallScreen: boolean}) => {
   const blogEls = blogs.map((blog, i) => {
     if (i) {
-      return <BlogPost blog={blog} isLast={i === blogs.length - 1 ? true : false} />
+      return <BlogPost key={blog.title} blog={blog} isLast={i === blogs.length - 1 ? true : false} />
     }
   })
   return (

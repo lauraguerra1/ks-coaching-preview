@@ -76,3 +76,40 @@ body {
     opacity: 100%;
   }
 }
+
+
+@keyframes fadeInFullDelayMiddle {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 10%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInFullDelayRight {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 2%;
+  }
+  65% {
+    opacity: 5%;
+  }
+  75% {
+    opacity: 15%;
+  }
+  87.5% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

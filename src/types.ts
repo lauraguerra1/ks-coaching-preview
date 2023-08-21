@@ -14,3 +14,9 @@ export type Blog = {
   link: string,
   coverImg: string
 }
+
+export type Service = {
+  title: string, 
+  description: string,
+  image:{src: string, alt: string}
+}
