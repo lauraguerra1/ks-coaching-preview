@@ -15,15 +15,17 @@ const ServiceDetail = ({ service, number, serviceIsSelected, deselectService }: 
   const domRef = useRef(null);
 
   useEffect(() => {
+    let localRef: HTMLElement | null = null;
+    if (domRef.current) localRef = domRef.current
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current!);
-    return () => observer.unobserve(domRef.current!);
+    observer.observe(localRef!);
+    return () => observer.unobserve(localRef!);
   }, []);
 
   return (
-    <section style={{ width: '100%' }} ref={domRef}>
+    <section style={{ width: '100%' }} ref={domRef} className='observed-section'>
       {serviceIsSelected &&
         <div className='selected-service-top'>
           <button className='service-back-btn' onClick={deselectService}><img src={back} alt='back button' /></button>

@@ -5,7 +5,6 @@
   position: relative;
   animation: fadeInFull 1s ease-in;
   opacity: 0;
-  /* transform: translateY(1vh); */
   visibility: hidden;
   transition: opacity 1s ease-out;
   will-change: opacity, visibility;
